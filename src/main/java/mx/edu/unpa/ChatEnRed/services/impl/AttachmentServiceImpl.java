@@ -1,4 +1,4 @@
-package mx.edu.unpa.ChatEnRed.services;
+package mx.edu.unpa.ChatEnRed.services.impl;
 
 import java.util.Optional;
 
@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import mx.edu.unpa.ChatEnRed.domains.Attachment;
 import mx.edu.unpa.ChatEnRed.repositories.AttachmentRepository;
+import mx.edu.unpa.ChatEnRed.services.AttachmentService;
 
 @Service
 public class AttachmentServiceImpl implements AttachmentService {

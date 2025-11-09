@@ -1,4 +1,4 @@
-package mx.edu.unpa.ChatEnRed.services;
+package mx.edu.unpa.ChatEnRed.services.impl;
 
 import java.util.Optional;
 
@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import mx.edu.unpa.ChatEnRed.domains.AuditEvent;
 import mx.edu.unpa.ChatEnRed.repositories.AuditEventRepository;
+import mx.edu.unpa.ChatEnRed.services.AuditEventService;
 
 @Service
 public class AuditEventServiceImpl implements AuditEventService{
