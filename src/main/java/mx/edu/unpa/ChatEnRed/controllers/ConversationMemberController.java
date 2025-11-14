@@ -21,7 +21,7 @@ import mx.edu.unpa.ChatEnRed.services.ConversationMemberService;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("/conversation_members")
+@RequestMapping("/conversation-members")
 public class ConversationMemberController {
 	@Autowired
 	private ConversationMemberService conversationMemberService;

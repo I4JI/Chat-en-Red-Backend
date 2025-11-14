@@ -1,12 +1,14 @@
 package mx.edu.unpa.ChatEnRed.domains;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -18,6 +20,7 @@ import mx.edu.unpa.ChatEnRed.enums.ContactStatus;
 public class Contact implements Serializable{
 	private static final long serialVersionUID =1L;
 	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name="owner_id")
 	private int ownerId;
@@ -30,9 +33,9 @@ public class Contact implements Serializable{
 	
 	
 	@Column(name="created_at")
-	private LocalDate createdAt;
+	private LocalDateTime createdAt;
 	@Column(name="updated_at")
-	private LocalDate updatedAt;
+	private LocalDateTime updatedAt;
 	
 	
 	

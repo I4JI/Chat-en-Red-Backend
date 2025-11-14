@@ -22,7 +22,7 @@ import mx.edu.unpa.ChatEnRed.services.MessageService;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("/messages")
+@RequestMapping("/message")
 public class MessageController {
 	@Autowired
 	private MessageService messageService;

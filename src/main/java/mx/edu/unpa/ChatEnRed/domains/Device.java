@@ -14,10 +14,10 @@ public class Device implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
 
     @Column(name = "user_id")
-    private Integer userId;
+    private int userId;
 
     @Column(name = "device_name")
     private String deviceName;

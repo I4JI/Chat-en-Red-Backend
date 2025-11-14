@@ -17,7 +17,7 @@ public class UserProfile implements Serializable {
 
     @Id
     @Column(name = "user_id")
-    private Integer userId;
+    private int userId;
 
     @Column(name = "display_name")
     private String displayName;

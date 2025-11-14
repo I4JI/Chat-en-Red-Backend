@@ -1,7 +1,6 @@
 package mx.edu.unpa.ChatEnRed.domains;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;

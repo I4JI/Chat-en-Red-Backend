@@ -22,7 +22,7 @@ import mx.edu.unpa.ChatEnRed.services.AuditEventService;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("/audit-Event")
+@RequestMapping("/audit-event")
 public class AuditEventController {
 	@Autowired
 	private AuditEventService auditEventService;

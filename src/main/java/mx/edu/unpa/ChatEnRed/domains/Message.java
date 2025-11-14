@@ -1,12 +1,14 @@
 package mx.edu.unpa.ChatEnRed.domains;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -14,10 +16,11 @@ import mx.edu.unpa.ChatEnRed.enums.MessageType;
 
 @Data
 @Entity
-@Table(name="Messages")
+@Table(name="messages")
 public class Message implements Serializable{
 	private static final long serialVersionUID =1L;
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name="conversation_id")
 	private int conversationId;
@@ -32,9 +35,9 @@ public class Message implements Serializable{
 	@Column(name="content")
 	private String content;
 	@Column(name="created_at")
-	private LocalDate createdAt;
+	private LocalDateTime createdAt;
 	@Column(name="edited_at")
-	private LocalDate editedAt;
+	private LocalDateTime editedAt;
 	
 	
 }

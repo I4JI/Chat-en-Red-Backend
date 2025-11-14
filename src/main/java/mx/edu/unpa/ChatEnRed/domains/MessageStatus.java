@@ -28,13 +28,13 @@ public class MessageStatus implements Serializable {
     private int recipientId;
     
     @Column(name ="delivered")
-    private Integer delivered;
+    private int delivered;
     
     @Column(name = "delivered_at")
     private LocalDateTime deliveredAt;
     
     @Column(name ="reading")
-    private Integer reading;
+    private int reading;
     
     @Column(name = "read_at")
     private LocalDateTime readAt;

@@ -20,12 +20,12 @@ public class Conversation implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
+    // SUSTITUCION DE ENUM
     private String type;
     private String title;
     
     @Column(name = "created_by")
-    private Integer createdBy;
+    private int createdBy;
     
     @Column(name = "created_at")
     private LocalDateTime createdAt;

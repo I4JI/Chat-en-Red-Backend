@@ -13,7 +13,7 @@ import mx.edu.unpa.ChatEnRed.services.UserProfileService;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("/profile")
+@RequestMapping("/user-profile")
 public class UserProfileController {
 
     @Autowired
